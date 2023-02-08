@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 100%;
+    padding: 0 4vw;
+    background: #afe9d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.25rem;
+}
+
+.nav__top {
+    position: relative;
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__button,
+.nav__logout {
+    padding: 0.5rem 1rem;
+    background: #f4e47e;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav__logout {
+    margin-left: 1rem;
+    border: none;
+}
+
+.nav__top__side {
+    display: flex;
+    align-items: center;
+}
+
+.nav__bottom {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.nav__bottom > li {
+    list-style: none;
+}
+
+.nav__bottom > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-title {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: 1rem solid #f4e47e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.main-only-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #afe9d0;
+}
+
+.form {
+    width: 100%;
+    padding: 4vh 10vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.form__container {
+    width: 100%;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.form__warning {
+    font-weight: bold;
+    color: red;
+}
+
+.form__field {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.form__input {
+    padding: 0.25rem 0;
+    width: 20rem;
+}
+
+.form__button {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: #f4e47e;
+    border: none;
+    font-weight: bold;
+}
+
+.list {
+    width: 100%;
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 20rem;
+    gap: 1rem;
+}
+
+.list__items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list__items__image {
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.list__items__name {
+    font-weight: bold;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__direction {
+    margin: 0 1rem;
+}
+
+.pagination__pages {
+    display: flex;
+    gap: 1rem;
+}
+
+.detail {
+    padding: 5rem 10rem;
+}
+
+.detail__title {
+    font-size: 2.5rem;
+}
+
+.detail__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.detail__image {
+    width: 25%;
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+}
+
+.detail__desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail__buy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 5rem;
+    background: #f4e47e;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.detail__price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.detail__description {
+    font-size: 1.5rem;
+}
+
+.cart {
+    padding: 5rem 10rem;
+}
+
+.cart__title {
+    font-size: 2.5rem;
+}
+
+.cart__list {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart__list__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.cart__delete {
+    padding: 0.5rem 1rem;
+    background: red;
+    color: white;
+    border: none;
+}
+
+.cart__image {
+    height: 8rem;
+    width: 20%;
+    object-fit: cover;
+}
+
+.cart__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cart__checkout {
+    padding: 0.5rem 5rem;
+    background: #f4e47e;
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.main-only-title-desc {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: 1rem solid #f4e47e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-only-title-desc > h1 {
+    font-size: 3rem;
+}
+
+.main-only-title-desc > p {
+    font-size: 1.5rem;
+}
+
+.profile {
+    padding: 5rem 10rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.profile__picture {
+    width: 28rem;
+    height: 30rem;
+}
+
+.profile__form {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-auto-rows: min-content;
+    gap: 1rem;
+}
+
+.profile__form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile__form__field > input,
+select {
+    padding: 0.5rem 1rem;
+}
+
+.profile__submit {
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    border: none;
+    background: #f4e47e;
+    font-weight: bold;
+}
+
+.account-maintenance {
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.account-maintenance__table {
+    border-spacing: 0;
+}
+
+.account-maintenance__table > tbody > tr > td {
+    padding: 0.5rem 0;
+    width: 20rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.account-maintenance__action {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.account-maintenance__delete {
+    border: none;
+    background: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.update-profile {
+    padding: 5rem 10rem;
+}
+
+.update-profile > h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.update-profile__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.update-profile__form > input[type="submit"] {
+    width: fit-content;
+    padding: 0.5rem 4rem;
+    background: #f4e47e;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+}
+
+.update-profile__form > label {
+    font-size: 1.5rem;
+}
